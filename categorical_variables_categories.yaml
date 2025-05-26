@@ -1,106 +1,88 @@
-PWVFM:
-  1: '2014 Q1'
-  2: '2014 Q2'
-  3: '2014 Q3'
-  4: '2014 Q4'
-  5: '2015 Q1'
-  6: '2015 Q2'
-  7: '2015 Q3'
-  8: '2015 Q4'
-  9: '2016 Q1'
-  10: '2016 Q2'
-  11: '2016 Q3'
-  12: '2016 Q4'
-  13: '2017 Q1'
-  14: '2017 Q2'
-  15: '2017 Q3'
-  16: '2017 Q4'
-  17: '2018 Q1'
-  18: '2018 Q2'
-  19: '2018 Q3'
-  20: '2018 Q4'
-  21: '2019 Q1'
-  22: '2019 Q2'
-  23: '2019 Q3'
-  24: '2019 Q4'
-  25: '2020 Q1'
-  26: '2020 Q2'
-  27: '2020 Q3'
-  28: '2020 Q4'
-  29: '2021 Q1'
-  30: '2021 Q2'
-  31: '2021 Q3'
-  32: '2021 Q4'
-  33: '2022 Q1'
-  34: '2022 Q2'
 PVERYFM:
   1: 'Very'
   2: 'Somewhat'
   3: 'Not at all'
+  
 PIDEAFM:
   1: 'Firm idea'
   2: 'Some idea'
   3: 'Little idea'
+  
 PLOTFM:
   1: 'A lot'
   2: 'A little'
   3: 'Not at all'
+  
 PPICKFM:
   1: 'I picked the loan type first, and then I picked the mortgage lender/broker'
   2: 'I picked the mortgage lender/broker first, and then I picked the loan type'
+  
 PAPPFM:
   1: 'Directly to a lender, such as a bank or credit union'
   2: 'Through a mortgage broker who works with multiple lenders to get you a loan'
   3: 'Through a builder who arranged financing'
+  
 PLENDFM:
   1: '1'
   2: '2'
   3: '3'
   4: '4'
   5: '5 or more'
+  
 PYNFM:
   1: 'Yes'
   2: 'No'
+  
 PIMPFM:
   1: 'Important'
   2: 'Not important'
+  
 PCONFM:
   1: 'I (or one of my co-signers) did'
   2: 'The mortgage lender/broker did'
   3: 'We were put in contact by a third party (such as a real estate agent or home builder)'
+  
 PTIFM:
   1: 'Reissued previous title insurance'
   2: 'Used title insurance recommended by mortgage lender/broker or settlement agent'
   3: 'Shopped around'
+  
 PCOUNFM:
   1: 'Less than 3 hours'
   2: '3-6 hours'
   3: '7-12 hours'
   4: 'More than 12 hours'
+  
 PPURPFM:
   1: 'To buy a property'
   2: 'To refinance or modify an earlier mortgage'
   3: 'To add/remove co-signer(s)/co-owner(s)'
   4: 'To finance a construction loan'
   5: 'To take out a new loan on a mortgage-free property'
+  
 PTIMEFM:
   1: 'Before offer'
   2: 'After offer'
   3: 'Did not do'
+  
 PUSEDFM:
   1: 'Used'
   2: 'Not Used'
+  
 PBLANKFM:
   1: 'Not answered'
   2: 'Answered'
+  
 PINTFM:
   1: 'Paid higher closing costs to get lower interest rate'
   2: 'Paid lower closing costs with a higher interest rate'
   3: 'Got a balance between closing costs and interest rate'
+  
 PSAMEFM:
   1: 'Higher'
   2: 'Same'
   3: 'Lower'
+  
 PACQFM:
   1: 'Purchased an existing home'
   2: 'Purchased a newly-built home from a builder'
@@ -112,6 +94,7 @@ PACQFM:
   8: 'Tax-free trade or exchange'
   9: 'Purchased a foreclosed property from a bank, investor, or government agency'
   10: 'Purchased a short sale property from the previous owner'
+  
 PPROPFM:
   1: 'Single-family detached house'
   2: 'Mobile home or manufactured home'
@@ -120,35 +103,42 @@ PPROPFM:
   5: 'Apartment (or condo/co-op) in apartment building'
   6: 'Unit in a partly commercial structure'
   7: 'Land only'
+  
 POCCFM:
   1: 'Primary residence (where you spend the majority of your time)'
   2: 'It will be my primary residence soon'
   3: 'Seasonal or second home'
   4: 'Home for other relatives'
   5: 'Rental or investment property'
+  
 PCHANGEFM:
   1: 'Significant increase'
   2: 'Little/no change'
   3: 'Significant decrease'
+  
 PPRICEFM:
   1: 'Increase a lot'
   2: 'Increase a little'
   3: 'Remain about the same'
   4: 'Decrease a little'
   5: 'Decrease a lot'
+  
 PDESIREFM:
   1: 'Become more desirable'
   2: 'Stay about the same'
   3: 'Become less desirable'
+  
 PMARRYFM:
   1: 'Married'
   2: 'Separated'
   3: 'Never married'
   4: 'Divorced'
   5: 'Widowed'
+  
 PSEXFM:
   1: 'Male'
   2: 'Female'
+  
 PEDUCFM:
   1: 'Some schooling'
   2: 'High school graduate'
@@ -156,11 +146,13 @@ PEDUCFM:
   4: 'Some college'
   5: 'College graduate'
   6: 'Postgraduate studies'
+  
 PRACEFM:
   1: 'White only'
   2: 'Black or African American only'
   3: 'Asian only'
   4: 'All other races'
+  
 PEMPLOYFM:
   1: 'Self-employed full time'
   2: 'Self-employed part time'
@@ -169,16 +161,19 @@ PEMPLOYFM:
   5: 'Retired'
   6: 'Unemployed, temporarily laid-off or on leave'
   7: 'Not working for pay (student, homemaker, disabled)'
+  
 PVETXFM:
   1: 'No, never served in the US Armed Forces'
   2: 'No, never on active duty except for initial/basic training'
   3: 'Yes, now on active duty'
   4: 'Yes, on active duty in the past, but not now'
+  
 PVETFM:
   1: 'Never served in the military'
   2: 'Only on active duty for training in the Reserves or National Guard'
   3: 'Now on active duty'
   4: 'On active duty in the past, but not now'
+  
 PINCFM:
   1: 'Less than $35,000'
   2: '$35,000 to  $49,999'
@@ -186,18 +181,22 @@ PINCFM:
   4: '$75,000 to  $99,999'
   5: '$100,000 to $174,999'
   6: '$175,000 or more'
+  
 PNORMFM:
   1: 'Higher than normal'
   2: 'Normal'
   3: 'Lower than normal'
+  
 PRISKFM:
   1: 'Take substantial financial risks expecting to earn substantial returns'
   2: 'Take above-average financial risks expecting to earn above average returns'
   3: 'Take average financial risks expecting to earn average returns'
   4: 'Not willing to take any financial risks'
+  
 PAGREEFM:
   1: 'Agree'
   2: 'Disagree'
+  
 PYRFM:
   2013: '2013'
   2014: '2014'
@@ -210,6 +209,7 @@ PYRFM:
   2021: '2021'
   2022: '2022'
   2023: '2023'
+  
 PMOFM:
   1: 'January'
   2: 'February'
@@ -223,6 +223,7 @@ PMOFM:
   10: 'October'
   11: 'November'
   12: 'December'
+  
 PLAMTFM:
   1: 'Less than $50,000'
   2: '$50,000 to  $99,999'
@@ -233,24 +234,29 @@ PLAMTFM:
   7: '$300,000 to $349,999'
   8: '$350,000 to $399,999'
   9: '$400,000 or more'
+  
 PLTYPEFM:
   1: 'Conventional'
   2: 'FHA insured'
   3: 'VA guaranteed'
   4: 'FSA/RHS insured'
+  
 PPTYPEFM:
   1: 'Fannie Mae'
   2: 'Freddie Mac'
   3: 'Federal Home Loan Bank'
+  
 PMETLMIFM:
   1: 'Metropolitan CRA non-LMI tract'
   2: 'Metropolitan CRA LMI tract'
   3: 'Non-metropolitan tract'
+  
 PBORRFM:
   1: '1 borrower'
   2: '2 borrowers'
   3: '3 borrowers'
   4: '4 borrowers'
+  
 PSTATFM:
   1: '30 to  59  days past due date'
   2: '60 to  89  days past due date'
@@ -269,22 +275,27 @@ PSTATFM:
   P: 'Performance history not yet started (before loan opened)'
   Q: 'Loan opened during this quarter'
   S: 'Performance for month suppressed by the servicer'
+  
 PCSTATFM:
   1: 'Mortgage Open'
   2: 'Mortgage Terminated'
   3: 'Mortgage Likely Terminated'
   4: 'Mortgage Possibly Terminated'
+  
 PRESERVE:
   1: 'Less than one month mortgage payment'
   2: '1-2 months worth of mortgage payments'
   3: '3-6 months worth of mortgage payments'
   4: '7 months worth or more of mortgage payments'
+  
 PCASHOUT:
   1: 'Cashout refinance'
   2: 'Not a cashout refinance'
+  
 PFORB:
   1: 'In forbearance'
   2: 'Not in forbearance'
+  
 PWILLING:
   1: 'Willing and able to move'
   2: 'Willing but unable to move'
