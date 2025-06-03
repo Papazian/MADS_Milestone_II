@@ -1,0 +1,6 @@
+# Setup files
+/venv
+.zshrc
+
+# Local only files
+/bin
