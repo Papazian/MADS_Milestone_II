@@ -1,3 +1,15 @@
+# Setup files
+/venv
+.zshrc
+
+# Local only files
+/bin
+
+
+# Data files
+*.csv
+
+
 # Large data files (GitHub has 100MB limit)
 *.csv
 *.xlsx
