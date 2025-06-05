@@ -182,6 +182,13 @@ for col in processed_df.columns:
 
 processed_df.columns = new_columns_list
 
-# Writing out final file
+# Writing cleaned file
 out_file_path = args.out_file_path
 processed_df.to_csv(out_file_path, index=False)
+
+# Writing variable YAML file
+# Converting categorical and numeric variables to tuples for yaml compatability
+yaml_data = {'categorical_variables': dict(zip(categorical_variables, categorical_variable_formats)),
+             'numeric_variables': dict(zip(numeric_variables, numeric_variable_formats))}
+with open('cleaned_variables.yaml', 'w', encoding='utf-8') as file:
+    yaml.dump(yaml_data, file)
