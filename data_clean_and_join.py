@@ -186,9 +186,15 @@ processed_df.columns = new_columns_list
 out_file_path = args.out_file_path
 processed_df.to_csv(out_file_path, index=False)
 
+# Retrieve the names of the new categorical variables (i.e., the dummy variables)
+
+new_categorical_variables = []
+for col in processed_df.columns:
+    if col not in numeric_variables:
+        new_categorical_variables.append(col)
+
 # Writing variable YAML file
-# Converting categorical and numeric variables to tuples for yaml compatability
-yaml_data = {'categorical_variables': dict(zip(categorical_variables, categorical_variable_formats)),
-             'numeric_variables': dict(zip(numeric_variables, numeric_variable_formats))}
+yaml_data = {'categorical_variables': new_categorical_variables,
+             'numeric_variables': numeric_variables}
 with open('cleaned_variables.yaml', 'w', encoding='utf-8') as file:
     yaml.dump(yaml_data, file)
