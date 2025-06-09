@@ -1,3 +1,9 @@
+"""Module performs:
+-train test split
+-imputation of missing numeric variables
+-standardization of numeric variables
+"""
+
 import argparse
 import yaml
 import pandas as pd
@@ -17,12 +23,12 @@ parser.add_argument('model_excluded_variables', nargs='?', default='model_exclud
                     (default: model_excluded_variables.yaml)''')
 parser.add_argument('cleaned_variables_path', nargs='?', default='cleaned_variables.yaml',
                     help='Optional cleaned variables file path (default: cleaned_variables.yaml)')
-parser.add_argument('X_train_path', nargs='?', default='bin/x_train.csv',
+parser.add_argument('X_train_path', nargs='?', default='bin/X_train.csv',
                     help='Optional output filename (default: bin/x_train.csv)')
 parser.add_argument('y_train_path', nargs='?', default='bin/y_train.csv',
                     help='Optional output filename (default: bin/y_train.csv)')
-parser.add_argument('X_test_path', nargs='?', default='bin/x_test.csv',
-                    help='Optional output filename (default: bin/x_test.csv)')
+parser.add_argument('X_test_path', nargs='?', default='bin/X_test.csv',
+                    help='Optional output filename (default: bin/X_test.csv)')
 parser.add_argument('y_test_path', nargs='?', default='bin/y_test.csv',
                     help='Optional output filename (default: bin/y_test.csv)')
 
