@@ -34,14 +34,19 @@ parser.add_argument('y_test_path', nargs='?', default='bin/y_test.csv',
 
 args = parser.parse_args()
 
-# Read in the cleaned data
 data = args.clean_data_file_path
+target = args.target
+model_excluded_variables_path = args.model_excluded_variables
+cleaned_variables_path = args.cleaned_variables_path
+X_train_path = args.X_train_path
+y_train_path = args.y_train_path
+X_test_path = args.X_test_path
+y_test_path = args.y_test_path
+
+# Read in the cleaned data
 df = pd.read_csv(data)
 
 # Read in variables for later processing
-model_excluded_variables_path = args.model_excluded_variables
-cleaned_variables_path = args.cleaned_variables_path
-
 with open(model_excluded_variables_path, 'r', encoding='utf-8') as file:
     model_excluded_variables = yaml.safe_load(file)
 
@@ -54,8 +59,13 @@ numeric_variables = [variable for variable in numeric_variables
                      if variable not in model_excluded_variables]
 
 # Filter data to remove observations missing target variable
-target = args.target
 df = df.dropna(subset=target)
+
+# Identifying low score, as banks typically use "lower middle" scoring
+# Banks pull 3 bureaus for each borrower, take the middle score for each borrower
+# then use the lowest borrowers middle score
+score_columns = [col for col in df.columns if col.startswith('score')]
+df['low_score'] = df[score_columns].min(axis=1)
 
 # Filter data to remove excluded variables
 X = df.drop(model_excluded_variables + [target], axis=1)
@@ -79,10 +89,6 @@ X_train[numeric_variables] = scaler.transform(X_train[numeric_variables])
 X_test[numeric_variables] = scaler.transform(X_test[numeric_variables])
 
 # Write train_test_split files
-X_train_path = args.X_train_path
-y_train_path = args.y_train_path
-X_test_path = args.X_test_path
-y_test_path = args.y_test_path
 
 X_train.to_csv(X_train_path, index=False)
 y_train.to_csv(y_train_path, index=False)
