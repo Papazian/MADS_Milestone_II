@@ -1,4 +1,4 @@
-### SIADS 696: MADS Milestone II 
+## SIADS 696: MADS Milestone II 
 
 *Analyzing Survey Data on Mortgage Originations*
  
