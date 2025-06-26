@@ -8,6 +8,12 @@
 
 ---
 
+**Final Report:**
+
+[Final_Report_Schoose_Stotts_Papazian.pdf](https://github.com/Papazian/MADS_Milestone_II/blob/main/Final_Report_Schoose_Stotts_Papazian.pdf)
+
+---
+
 Before running the Jupyter Notebooks, it is necessary to first execute the two Python scripts from the command line or from within a notebook using:
 
 `%run data_clean_and_join.py`
